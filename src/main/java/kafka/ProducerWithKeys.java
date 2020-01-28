@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutionException;
 
 public class ProducerWithKeys {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        final Logger logger = LoggerFactory.getLogger(ProducerCallbacks.class);
+        final Logger logger = LoggerFactory.getLogger(ProducerWithKeys.class);
         Properties properties = new Properties();
         properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "127.0.0.1:9092");
         properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
